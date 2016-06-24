@@ -1,5 +1,7 @@
 .achivement{
     position: relative;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .achivement__image{
