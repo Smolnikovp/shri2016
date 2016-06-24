@@ -1,0 +1,90 @@
+.achivement{
+    position: relative;
+}
+
+.achivement__image{
+    z-index: 1;
+}
+
+.achivement:after{
+    content: '';
+}
+
+.achivement:before{
+    content: attr(achivement_id);
+    font-family: Arial;
+    line-height: 40px;
+    z-index: 2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.achivement:after,
+.achivement:before{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    height: 40px;
+    width: 40px;
+}
+
+.achivement,
+.achivement:after{
+    border-width: 3px;
+    border-style: solid;
+}
+
+.achivement,
+.achivement__image{
+    width: 100px;
+    height: 100px;
+}
+
+.achivement,
+.achivement:after,
+.achivement__image{
+    background-color: #fff;
+}
+
+.achivement:after,
+.achivement:before,
+.achivement__image{
+    position: absolute;
+}
+
+.achivement,
+.achivement:after,
+.achivement:before,
+.achivement__image{
+    border-radius: 50%;
+}
+
+/*Стандартная тема*/
+.achivement_theme_default,
+.achivement_theme_default:after{
+    border-color: #00bfff;
+}
+
+.achivement_theme_default:before{
+    color: #00bfff;
+}
+
+/*Розовая тема*/
+.achivement_theme_pink,
+.achivement_theme_pink:after{
+    border-color: #f0f;
+}
+
+.achivement_theme_pink:before{
+    color: #f0f;
+}
+
+/*Фиолентовая тема*/
+.achivement_theme_violet,
+.achivement_theme_violet:after{
+    border-color: #a74cff;
+}
+
+.achivement_theme_violet:before{
+    color: #a74cff;
+}
